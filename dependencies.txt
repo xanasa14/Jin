@@ -1,0 +1,7 @@
+brew install portaudio
+pip install pyaudio
+pip install simpleaudio
+
+Pip install wave
+Pip install chatterbot
+Pip install chatterbot_corpus
