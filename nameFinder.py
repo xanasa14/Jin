@@ -37,5 +37,12 @@ Shortly after confirmation that Jack has made contact with the freighter, Jin wa
 
 At the Oceanic 6 conference when a Korean reporter asks Sun if Jin survived the crash, Sun looks very somber and pauses for a minute before replying that he did not. Sun later buys a controlling share of her father's company as retribution for, in her view, his hand in Jin's death. Sun names her daughter Ji Yeon as Jin had asked.
 
+
 """
-print(set(extract_names(string)))
+
+listOfNames = []
+extracts = list(set(extract_names(string)))
+
+extracts.sort()
+for i in range(len(extracts)):
+    print(extracts[i])
