@@ -40,9 +40,8 @@ At the Oceanic 6 conference when a Korean reporter asks Sun if Jin survived the 
 
 """
 
-listOfNames = []
-extracts = list(set(extract_names(string)))
+listOfNames = list(set(extract_names(string)))
 
-extracts.sort()
-for i in range(len(extracts)):
-    print(extracts[i])
+listOfNames.sort()
+for i in range(len(listOfNames)):
+    print(listOfNames[i])
