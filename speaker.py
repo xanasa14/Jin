@@ -13,18 +13,16 @@ def speakerOut(mytext):
         mytext = "Sorry. I could not get you"
 
     # Language in which you want to convert
-    language = 'zh-CN'
     #ACCENT
+    language = 'zh-TW'
+    # ACCENT
     accent = 'zh-CN'
 
     # Passing the text and language to the engine,
     # here we have marked slow=False. Which tells
     # the module that the converted audio should
     # have a high speed
-    myobj = gTTS(text=mytext, lang=language, slow=False)
-                 #tld=accent
-                 # )
-
+    myobj = gTTS(text=mytext, lang=language, slow=False,tld=accent )
     # Saving the converted audio in a mp3 file named
     # welcome
     myobj.save("assets/welcome.mp3")
