@@ -17,11 +17,20 @@ def searcher(text):
             place = ""
             place = driver.find_element(By.CSS_SELECTOR, ".Z0LcW").text
             print(place)
-        elif(driver.find_element_by_class_name("FLP8od")):
+            #vWLAgc
+        elif (driver.find_element(By.CSS_SELECTOR, ".IsqQVc").text):
+            #time.sleep(10)  # Let the user actually see something!
+            place = ""
+            place = driver.find_element(By.CSS_SELECTOR, ".IsqQVc").text
+            print(place)
+        elif(driver.find_element_by_class_name("IsqQVc NprOob XcVN5d wT3VGc")):
             print("OK")
         else:
             print("not found")
             place = "I am sorry. I could not find anything. Try again."
     except:
         print(query + " had problems looking up for")
+        place = "error"
     return place
+#text = "how much cost a stock of Pepsi"
+#searcher(text)
